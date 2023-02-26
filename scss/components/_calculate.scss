@@ -1,0 +1,44 @@
+.calculate {
+    .container {
+        @include container;
+    }
+
+    &__wrapper {
+        z-index: -2;
+        height: 632px;
+
+        position: relative;
+        background: linear-gradient(180deg, #242424 0%, #505050 100%);
+    }
+
+    &__background {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 70px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $white;
+
+        padding-top: 86px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+    }
+    &__statistic {
+        text-align: center;
+        margin-top: 14px;
+        opacity: 0.4;
+        color: $white;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+    }
+}

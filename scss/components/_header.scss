@@ -1,0 +1,88 @@
+.header {
+
+    background-color: $white;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+
+    .container {
+        @include container;
+    }
+
+
+
+}
+.menu {
+    &__list {
+        height: 64px;
+        @include flex-between;
+    }
+}
+
+.logo {
+    @include flex;
+}
+
+.contact {
+    &__call {
+        font-weight: 700;
+    }
+
+    &__hours {
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: right;
+    }
+}
+
+.language {
+    &__wrapper {
+        position: relative;
+        background-color: #f5f5f5;
+        border-radius: 80px;
+        padding: 10px;
+
+    }
+    &__flag {
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__img {
+        margin-right: 5px;
+    }
+
+    &__selected {
+        @include flex;
+        cursor: pointer;
+    }
+    &__change {
+        display: none;
+        border-radius: 80px 80px 20px 20px;
+        width: 62px;
+
+
+    }
+    &__wrapper.active {
+        border-radius: 22px 22px 0 0;
+    }
+    &__change.active {
+        z-index: 2;
+        position: absolute;
+        display: block;
+        background-color: $background;
+        border-radius: 0 0 15px 15px;
+        left: 0;
+        padding-top: 10px;
+    }
+    &__country {
+        @include flex;
+        cursor: pointer;
+        padding: 10px;
+    }
+    &__country:last-child {
+        border-radius: 0 0 15px 15px;
+    }
+
+    &__country:hover {
+        background-color: #cfcfcf;
+    }
+}

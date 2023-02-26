@@ -1,0 +1,74 @@
+@mixin container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: $container;
+}
+
+// ---------------- flex ----------------
+@mixin flex {
+    display: flex;
+    align-items: center;
+    
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-between__fe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@mixin flex-between__fs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flex-fs {
+    display: flex;
+    align-items: flex-start;
+}
+
+@mixin flex-fe {
+    display: flex;
+    align-items: flex-end;
+}
+@mixin flex-fs__center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flex-fe__center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+// ---------------- images ----------------
+
+@mixin bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// ---------------- pseudo-classes, pseudo-elements ----------------
+
+@mixin not-last-mb($value) {
+    &:not(:last-child) {
+        margin-right: $value;
+    }
+}
+
+@mixin not-first-mt($value) {
+    &:not(:first-child) {
+        margin-top: $value;
+    }
+}

@@ -1,0 +1,10 @@
+body {
+    @include tablet {
+        min-width: 1170px;
+    }
+    @include mobile {
+        min-width: 768px;
+    }
+
+
+}

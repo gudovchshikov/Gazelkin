@@ -1,0 +1,94 @@
+.worksheet{
+    .container {
+        @include container;
+    }
+
+    &__wrapper {
+
+        margin-top: 144px;
+        background-color: $white;
+        padding: 80px 0;
+    }
+    &__content {
+        @include flex-fe;
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__leftside {
+        @include flex-fs;
+        flex-direction: column;
+        @include mobile {
+            align-items: center;
+        }
+    }
+    &__subtitle {
+        text-transform: uppercase;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    &__title {
+        margin-top: 10px;
+
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+    }
+
+    &__btn {
+        
+        display: block;
+
+        margin-top: 152px;
+
+        padding: 20px 40px;
+        border-radius: 50px;
+        background-color: $secondary;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+
+        @include mobile {
+            margin-top: 30px;
+        }
+    }
+
+    &__rightside {
+        margin-left: 415px;
+        @include mobile {
+            margin-left: 0;
+            margin-top: 60px;
+        }
+    }
+
+    &__name {
+
+        @include not-first-mt(40px);
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__item {
+
+
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    &__item + &__item {
+        margin-top: 10px;
+    }
+
+}

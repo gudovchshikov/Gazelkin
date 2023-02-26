@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="plugins/slick.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="logo">
+                            <img src="images/logo/logo.svg" alt="logo" class="logo__img">
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#warranty" class="menu__link">Гарантируем</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#calculate" class="menu__link">Заработок</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#worksheet" class="menu__link">Вакансия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#gallery" class="menu__link">Галерея</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#reviews" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="contact">
+                            <div class="contact__call">
+                                <a href="tel:84993000007" class="contact__phone">8 (499) 300-00-07</a>
+                            </div>
+                            <p class="contact__hours">
+                                с 07.00-22.00
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="language">
+                            <div class="language__wrapper">
+                                <div class="language__selected">
+                                    <div class="language__flag">
+                                        <img src="images/icons/flags/ru.svg" alt="ru" class="language__img">
+                                    </div>
+                                    <div class="language__icon">
+                                        <img src="images/icons/dropdown.svg" alt="dropdown" class="language__ico">
+                                    </div>
+                                </div>
+                                <div class="language__change">
+                                    <div class="language__country">
+                                        <img src="images/icons/flags/ru.svg" alt="ru" class="language__img">
+                                        <p class="language__name">RU</p>
+                                    </div>
+                                    <div class="language__country">
+                                        <img src="images/icons/flags/uz.svg" alt="uz" class="language__img">
+                                        <p class="language__name">UZ</p>
+                                    </div>
+                                    <div class="language__country">
+                                        <img src="images/icons/flags/tj.svg" alt="tj" class="language__img">
+                                        <p class="language__name">TJ</p>
+                                    </div>
+                                    <div class="language__country">
+                                        <img src="images/icons/flags/kz.svg" alt="kz" class="language__img">
+                                        <p class="language__name">KZ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__info">
+                        <div class="hero__location">
+                            <img src="images/icons/pin.svg" alt="pin" class="hero__pin">
+                            <p class="hero__desc">Москва и Санкт-Петербург</p>
+                        </div>
+                        <h1 class="hero__title">
+                            Работа водителем
+                        </h1>
+                        <p class="hero__subtitle">
+                            Ватовым методом в Сантк-Петербурге.
+                            Средняя заработная плата от 90 000 руб.
+                        </p>
+                        <div class="btn">
+                            <div class="btn__wrapper">
+                                <a href="" class="btn__link">Заполнить анкету</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom">
+                        <div class="custom__wrapper">
+                            <img src="images/people/hero.jpg" aria-hidden="true" class="custom__img">
+                            <div class="custom__bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__info">
+                        <div class="about__leftside">
+                            <h2 class="about__title">
+                                Мы занимаемся доставкой
+                                грузов <span class="important">более 15 лет</span>
+                            </h2>
+                            <div class="advantages">
+                                <div class="advantages__wrapper">
+                                    <div class="advantages__item">
+                                        <h3 class="advantages__title">345 765</h3>
+                                        <p class="advantages__text">Перевозок в год</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <h3 class="advantages__title">10 000</h3>
+                                        <p class="advantages__text">Сотрудников</p>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <h3 class="advantages__title">5 000</h3>                                    <p class="advantages__text"></p>
+                                        <p class="advantages__text">Автомобилей</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__rightside">
+                            <p class="about__desc">
+                                Наша компания Газелькин получила репутацию
+                                надежного помощника при переездах и транспортировке грузов.
+                                Мы стремимся, чтобы сотрудничать с нами было выгодно и удобно, 
+                                поэтому постоянно развиваем наши сервисы и предлагаем актуальные услуги. 
+                                Мы ценим людей и команду. Поэтому мы ищем не просто сотрудников,
+                                а единомышленников — людей, которые будут работать 
+                                осмысленно и увлеченно.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="warranty" id="warranty">
+            <div class="container">
+                <div class="warranty__wrapper">
+                    <div class="warranty__present">
+                        <h3 class="warranty__title">Мы предлагаем</h3>
+                        <div class="custom">
+                            <div class="custom__wrapper">
+                                <img src="images/people/hands.jpg" aria-hidden="true" class="custom__img">
+                                <div class="custom__bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warranty__items">
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Стабильная зарплата</h4>
+                            <div class="warranty__desc">
+                                Регулярные выплаты и 
+                                премии лучшим водителям
+                            </div>
+                        </div>
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Предоставляем общежитие</h4>
+                            <div class="warranty__desc">
+                                Обеспечиваем комфортное 
+                                проживание сотрудников
+                            </div>
+                        </div>
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Ремонтная база</h4>
+                            <div class="warranty__desc">
+                                Тех. обслуживание и 
+                                страховка за счет компании
+                            </div>
+                        </div>
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Сопровождение на линии</h4>
+                            <div class="warranty__desc">
+                                Вам всегда поможет наша
+                                логистическая служба
+                            </div>
+                        </div>
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Комфортный график работы</h4>
+                            <div class="warranty__desc">
+                                Предлагаем несколько графиков
+                                работы на выбор 
+                            </div>
+                        </div>
+                        <div class="warranty__item">
+                            <h4 class="warranty__title">Работа на автомобиле компании</h4>
+                            <div class="warranty__desc">
+                                Возможность пройти инструктаж и 
+                                выбрать одну из 600 грузовых машин
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calculate" id="calculate">
+            <div class="calculate__wrapper">
+                <img class="calculate__background" src="images/backgrounds/calc.svg" alt="bg">
+                <div class="container">
+                    <h2 class="calculate__title">Посчитайте сколько вы можете заработать</h2>
+                    <p class="calculate__statistic">По данным статистики с 01.01.2020 до 31.12.2020</p>
+                    <div class="calculator">
+                        <div class="calculator__wrapper">
+                            <div class="calculator__screen">
+                                <h3 class="calculator__title">Выберите график работы</h3>
+                                <div class="calculator__form">
+                                    <a href="" class="calculator__link">5/2</a>
+                                    <a href="" class="calculator__link">6/1</a>
+                                    <a href="" class="calculator__link">7/0</a>
+                                </div>
+                                <div class="calculator__calc">
+                                    <p class="calculator__desc">Ваш заработок в месяц до:</p>
+                                    <div class="calculator__summs">
+                                        <p class="calculator__summ">120.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__btns">
+                                <div class="calculator__item">АС</div>
+                                <div class="calculator__item">±</div>
+                                <div class="calculator__item">%</div>
+                                <div class="calculator__item">÷</div>
+                                <div class="calculator__item">7</div>
+                                <div class="calculator__item">8</div>
+                                <div class="calculator__item">9</div>
+                                <div class="calculator__item">×</div>
+                                <div class="calculator__item">4</div>
+                                <div class="calculator__item">5</div>
+                                <div class="calculator__item">6</div>
+                                <div class="calculator__item">-</div>
+                                <div class="calculator__item">1</div>
+                                <div class="calculator__item">2</div>
+                                <div class="calculator__item">3</div>
+                                <div class="calculator__item">+</div>
+                                <div class="calculator__item calculator__null">0</div>
+                                <div class="calculator__item">,</div>
+                                <div class="calculator__item">=</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="worksheet" id="worksheet">
+            <div class="worksheet__wrapper">
+                <div class="container">
+                    <div class="worksheet__content">
+                        <div class="worksheet__leftside">
+                            <div class="worksheet__subtitle">Условия вакансии</div>
+                            <h2 class="worksheet__title">Водитель вахтой</h2>
+                            <a class="worksheet__btn">Заполнить анкету</a>
+                        </div>
+                        <div class="worksheet__rightside">
+                            <p class="worksheet__name">Что мы от вас ожидаем</p>
+                            <ul class="worksheet__list">
+                                <li class="worksheet__item">Качественная доставка грузов</li>
+                                <li class="worksheet__item">Соблюдение ПДД.</li>
+                            </ul>
+                            <p class="worksheet__name">Что мы от вас ожидаем</p>
+                            <ul class="worksheet__list">
+                                <li class="worksheet__item">Удостоверение категории В</li>
+                                <li class="worksheet__item">Отличное настроение и позитив</li>
+                                <li class="worksheet__item">Остальному научимся вместе!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <h2 class="reviews__title">Отзывы сотрудников</h2>
+                    <div class="reviews__items">
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__person">
+                                <img src="images/avatars/avatar.jpg" alt="person_avatar" class="review__avatar">
+                                <div class="review__info">
+                                    <p class="review__fcs">Смирнов Александр</p>
+                                    <p class="review__experience">Опыт работы: <span>3 года</span></p>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <p class="review__desc">
+                                    Главным образом постоянный количественный 
+                                    рост и сфера нашей активности позволяет выполнять важные 
+                                    задания по разработке модели развития. Задача организации,
+                                    в особенности же укрепление и развитие структуры способствует 
+                                    подготовки и реализации существенных финансовых и административных условий.
+                                </p>
+                                <p class="review__date">12.10.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="gallery__wrapper">
+                <div class="container">
+                    <div class="gallery__content">
+                        <div class="gallery__info">
+                            <h2 class="gallery__title">Фотографии</h2>
+                            <div class="gallery__links">
+                                <a href="" class="gallery__hostel">Общежитие</a>
+                                <a href="" class="gallery__repair">Ремонтная зона</a>
+                            </div>
+                        </div>
+                        <div class="gallery__items">
+                            <div class="gallery__item">
+                                <img src="images/house/home1.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home2.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home3.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home4.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home5.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home6.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home7.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="gallery__item">
+                                <img src="images/house/home8.jpg" alt="" class="gallery__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta" id="cta">
+            <div class="cta__wrapper">
+                <div class="container">
+                    <div class="cta__content">
+                        <div class="cta__info">
+                            <h3 class="cta__title">Хотите стать частью команды?</h3>
+                            <p class="cta__desc">Заполните анкету, и наш менеджер свяжется с вами в ближайшее время</p>
+                            <a class="cta__link">Заполнить анкету</a>
+                        </div>
+                        <div class="custom">
+                            <div class="custom__wrapper">
+                                <img src="images/people/man.jpg" aria-hidden="true" class="custom__img">
+                                <div class="custom__bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__content">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <div class="logo">
+                                    <img src="images/logo/logo.svg" alt="logo" class="logo__img">
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Гарантируем</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Заработок</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Вакансия</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Вакансия</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <div class="contact">
+                                    <div class="contact__call">
+                                        <a href="tel:84993000007" class="contact__phone">8 (499) 300-00-07</a>
+                                    </div>
+                                    <p class="contact__hours">
+                                        с 07.00-22.00
+                                    </p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <hr class="footer__hr">
+                    <div class="footer__bottom">
+                        <div class="footer__copyright">
+                            <div class="footer__date">© 2001-2020.</div>
+                            <div class="footer__company">Сайт грузоперевозок «Газелькин»</div>
+                        </div>
+                        <div class="footer__social">
+                            <a href="" class="footer__social">
+                                <img src="images/icons/social/vk.svg" alt="vk">
+                            </a>
+                            <a href="" class="footer__social">
+                                <img src="images/icons/social/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="" class="footer__social">
+                                <img src="images/icons/social/inst.svg" alt="inst">
+                            </a>
+                            <a href="" class="footer__social">
+                                <img src="images/icons/social/ok.svg" alt="ok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+// ---------------- 1. settings ----------------
+
+@import 'settings/variables';
+@import 'settings/reset';
+
+// ---------------- 2. mixins ----------------
+
+
+@import 'mixins/breakpoints';
+@import 'mixins/font-face';
+@import 'mixins/styles';
+@import 'settings/default';
+
+// ---------------- 3. fonts ----------------
+
+@import 'fonts/fonts';
+
+
+// ---------------- 3. components ----------------
+
+@import 'components/general';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/warranty';
+@import 'components/calculate';
+@import 'components/calculator';
+@import 'components/worksheet';
+@import 'components/reviews';
+@import 'components/gallery';
+@import 'components/cta';
+@import 'components/footer';
+
+// ---------------- 4. plugins ----------------
+ 
+@import '../plugins/slick.scss';
+
+
+
+
+

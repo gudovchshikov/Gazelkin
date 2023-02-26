@@ -1,0 +1,77 @@
+.cta {
+    * {
+        color: $white;
+    }
+    .container {
+        @include container;
+    }
+    &__wrapper {
+        padding: 40px 0;
+        overflow: hidden;
+        background: linear-gradient(180deg, #242424 0%, #505050 100%);
+    }
+    &__content {
+        @include flex-between;
+    }
+    &__info {
+        z-index: 2;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+    }
+    &__desc {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    &__link {
+        color: $primary;
+        margin-top: 40px;
+        width: max-content;
+        display: block;
+        border-radius: 50px;
+        background-color: $secondary;
+        padding: 20px 40px;
+    }
+
+    .custom {
+        &__img {
+            background: linear-gradient(white, white) padding-box,
+            linear-gradient(to right, #242424 0%, #505050 100%) border-box;
+            border-radius: 50%;
+            border: 45px solid transparent;
+            border-radius: 360px;
+            outline:10px solid $secondary;
+            outline-offset: -45px;
+            max-width: 420px;
+
+        }
+        &__bg {
+            background-color: #2A2A2A;
+            position: absolute;
+            top: -50%; 
+            left: -50%;
+            width: 843px;
+            height: 843px;
+            border-radius: 50%;
+        }
+        &__wrapper {
+            position: relative;
+            margin-left: 0;
+        }
+       
+        &__wrapper::after {
+            bottom: 0;
+            right: 0;
+        }
+        &__wrapper::before {
+            z-index: 1;
+        }
+    }
+
+}

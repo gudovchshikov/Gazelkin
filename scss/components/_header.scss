@@ -14,11 +14,28 @@
     &__list {
         height: 64px;
         @include flex-between;
+
+        @include mobile {
+            flex-direction: column;
+            height: max-content;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        margin-top: 20px;
     }
 }
 
 .logo {
     @include flex;
+
+    @include mobile {
+
+        &__img {
+            width: 150px;
+        }
+    }
 }
 
 .contact {
@@ -30,10 +47,19 @@
         font-size: 12px;
         margin-top: 10px;
         text-align: right;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 }
 
 .language {
+    
+    @include mobile {
+        display: none;
+    }
+
     &__wrapper {
         position: relative;
         background-color: #f5f5f5;

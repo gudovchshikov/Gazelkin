@@ -99,10 +99,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .menu__list {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+}
+.menu__item {
+  margin-top: 20px;
+}
 
 .logo {
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .logo__img {
+    width: 150px;
+  }
 }
 
 .contact__call {
@@ -113,7 +128,17 @@ body {
   margin-top: 10px;
   text-align: right;
 }
+@media (max-width: 768px) {
+  .contact__hours {
+    text-align: center;
+  }
+}
 
+@media (max-width: 768px) {
+  .language {
+    display: none;
+  }
+}
 .language__wrapper {
   position: relative;
   background-color: #f5f5f5;
@@ -680,6 +705,10 @@ body {
   margin: 0 20px;
 }
 
+.slick-slide:first-child {
+  margin: 0 20px;
+}
+
 .slick-list {
   margin: 0 -20px;
 }
@@ -851,6 +880,11 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    min-width: none;
+  }
+}
 .footer .container {
   margin: 0 auto;
   padding: 0 10px;

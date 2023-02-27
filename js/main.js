@@ -18,7 +18,8 @@ headerLang.addEventListener('click', (event) => {
 
 $('.reviews__items').slick({
     infinite: false,
-    speed: 300,
+    speed: 1000,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,

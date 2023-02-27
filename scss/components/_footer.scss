@@ -1,5 +1,9 @@
 
 .footer {
+    @include mobile {
+        min-width: none;
+    }
+
     .container {
         @include container;
     }

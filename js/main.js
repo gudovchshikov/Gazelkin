@@ -36,4 +36,4 @@ $('.reviews__items').slick({
       // settings: "unslick"
       // instead of a settings object
     ]
-  });
+});

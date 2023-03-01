@@ -22,8 +22,10 @@
         }
     }
 
-    &__item {
-        margin-top: 20px;
+    @include mobile {
+        &__item {
+            margin-top: 20px;
+        }
     }
 }
 

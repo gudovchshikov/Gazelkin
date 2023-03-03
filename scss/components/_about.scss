@@ -11,14 +11,14 @@
 
     &__info {
         @include flex-between__fe;
-        @include mobile {
+        @include tablet {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
     }
     &__rightside {
-        @include mobile {
+        @include tablet {
             margin-top: 30px;
         }
     }

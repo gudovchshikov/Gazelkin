@@ -90,6 +90,8 @@
         position: absolute;
         bottom: -40px;
         left: 0;
+
+        
     }
 
     @include tablet {
@@ -97,7 +99,8 @@
             flex-direction: column;
             align-items: center;
         }
-        &__wrapper::before {
+
+        &__wrapper::before, &__wrapper::after {
             display: none;
         }
         &__links {

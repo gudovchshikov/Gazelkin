@@ -809,7 +809,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .gallery__wrapper::before {
+  .gallery__wrapper::before, .gallery__wrapper::after {
     display: none;
   }
   .gallery__links {

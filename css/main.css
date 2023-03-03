@@ -888,7 +888,7 @@ body {
   border: 45px solid transparent;
 }
 .cta .custom__img {
-  outline: 10px solid #efbd2e;
+  border: 10px solid #efbd2e;
   max-width: 410px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

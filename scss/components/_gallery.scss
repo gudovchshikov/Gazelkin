@@ -109,8 +109,15 @@
             margin: 0 auto;
         }
         &__items {
+            flex: 1 1 50%;
             margin-top: 50px;
             justify-content: center;
+        }
+        &__item {
+            flex: 1 1 50%;
+        }
+        &__img {
+            max-width: 100%;
         }
 
     }

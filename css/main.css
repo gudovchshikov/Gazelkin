@@ -878,20 +878,29 @@ body {
   background-color: #efbd2e;
   padding: 20px 40px;
 }
-.cta .custom__img {
+.cta .custom__image {
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #242424 0%, #505050 100%) border-box;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
+  -khtml-border-radius: 50%;
   border: 45px solid transparent;
-  border-radius: 360px;
+}
+.cta .custom__img {
   outline: 10px solid #efbd2e;
-  outline-offset: -45px;
-  max-width: 420px;
+  max-width: 410px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
 }
 .cta .custom__bg {
   background-color: #2A2A2A;
   position: absolute;
-  top: -50%;
-  left: -50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 843px;
   height: 843px;
   border-radius: 50%;
